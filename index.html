@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Náhodný úkol</title>
+</head>
+<body>
+    <h1>Váš náhodný úkol</h1>
+    <p id="task"></p>
+
+    <script>
+        const tasks = [
+            "Úkol 1: Vypracujte esej na téma XYZ.",
+            "Úkol 2: Vypočítejte příklady z kapitoly 5.",
+            "Úkol 3: Přečtěte si kapitolu 3 a napište shrnutí.",
+            "Úkol 4: Připravte prezentaci na téma ABC.",
+            "Úkol 5: Vyplňte pracovní list na straně 42."
+        ];
+
+        const randomTask = tasks[Math.floor(Math.random() * tasks.length)];
+        document.getElementById('task').innerText = randomTask;
+    </script>
+</body>
+</html>
