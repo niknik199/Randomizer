@@ -6,7 +6,7 @@
     <title>Náhodný úkol</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Poppins, sans-serif;
             background-color: #f0f0f0;
             display: flex;
             justify-content: center;
@@ -33,36 +33,78 @@
 
     <script>
         const tasks = [
-            "Úkol 1: Vypracujte esej na téma XYZ.",
-            "Úkol 2: Vypočítejte příklady z kapitoly 5.",
-            "Úkol 3: Přečtěte si kapitolu 3 a napište shrnutí.",
-            "Úkol 4: Připravte prezentaci na téma ABC.",
-            "Úkol 5: Vyplňte pracovní list na straně 42."
-        ];
-
-        const randomTask = tasks[Math.floor(Math.random() * tasks.length)];
-        document.getElementById('task').innerText = randomTask;
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Náhodný úkol</title>
-</head>
-<body>
-    <h1>Váš náhodný úkol</h1>
-    <p id="task"></p>
-
-    <script>
-        const tasks = [
-            "Úkol 1: Vypracujte esej na téma XYZ.",
-            "Úkol 2: Vypočítejte příklady z kapitoly 5.",
-            "Úkol 3: Přečtěte si kapitolu 3 a napište shrnutí.",
-            "Úkol 4: Připravte prezentaci na téma ABC.",
-            "Úkol 5: Vyplňte pracovní list na straně 42."
+            "Uvař si nový recept nebo vyzkoušej jídlo, které jsi ještě nejedl.",
+            "Věnuj půl hodiny před spaním večerní procházce.",
+            "Pokus se dnes vše řešit 'staromódním způsobem'. Osobním rozhovorem, vzkazem, nebo telefonátem. Pokus se vyhnout psaní zpráv a emailů.",
+            "Celý den mluv s lidmi jen v angličtině (nebo jiném jazyce, který se učíš)",
+            "Vyraz na výlet do části města, kde jsi ještě nebyl.",
+            "Strav celý den bez hodinek, nebo mobilu - pokus se řídit svým vnitřním časem.",
+            "Strav celý den bez použití plastů - pokus se uvědomit si, kde všude je používáš a zkus najít alternativy",
+            "Celý den se pokus vyhnout pohledu do zrcadel a jiných reflexních povrchů.",
+            "Vyzkoušej celý den chodit na boso, pokud to situace umožňují.",
+            "Najdi ve svém šatníku ten nejvíce extravagantní kousek a vyraž v něm ven. Sleduj pohledy ostatních lidí.",
+            "Pokus se strávit celý den bez peněz - jez se svých zásob, využij bezplatné služby atd.",
+            "Vyzkoušej dnes jíst pouze vegetariánská či veganská jídla, i když běžně jíš maso.",
+            "Vydej se na výlet do neznámého místa a pokus se nepoužívat gps mapu v mobilu. Povolené jsou pouze tištěné mapy nebo vnitřní kompas.",
+            "Pozdravte souseda, nebo kolegu, kterého běžně neoslovujete, a krátce s ním popovídejte.",
+            "Zkuste si dnes namísto koupení čerstvého pečiva upéct vlastní.",
+            "Zkus si dnes ani jednou na nic neztěžovat.",
+            "Nastav si telefon do jiného jazyka.",
+            "Řekni si dnes třikrát NE na svůj zlozvyk nebo nějakou jinou věc/činnost o které víš, že pro tebe není dobrá.",
+            "Celý den se vyhni vulgarismům.",
+            "Pokus se celý den jíst bez rušivých elementů (telefon, TV...)",
+            "Celý den nepoužívej slovní výplň (jako)",
+            "Celý den zkus primárně používat svou opačnou ruku.",
+            "Na konci dne si zapiš tři věci, které se ti dnes povedly nebo ti udělali radost.",
+            "Dnes zkus upřednostnit chůzi před dopravními prostředky.",
+            "Dnes držíš silent day.",
+            "Změň svou trasu do práce či z práce.",
+            "Běž nakoupit do jiného obchodu.",
+            "Lehni si na 15 minut v obýváku a nic nedělej.",
+            "Pij celý den jenom vodu.",
+            "Poslechni si hudbu z roku, ve kterém ses narodil.",
+            "Vezmi si všechno oblečení v jedné barvě.",
+            "Dej si dnes studenou sprchu.",
+            "Přečti si alespoň jeden zajímavý článek.",
+            "Udělej dobrý skutek (dones někomu kafe, ...).",
+            "Popřej alespoň pěti lidem 'Hezký den'.",
+            "Vystup o zastávku dřív a dojdi domu pěšky.",
+            "Ráno po tom co vstaneš udělej tolik dřepů kolik ti je let.",
+            "Večer před usnutím si zrekapituluj svůj den a řekni si, co mohlo být lepší a co bylo dobré.",
+            "Učeš si dnes vlasy jinak než každý den.",
+            "Napočítej kolik žlutých aut si za den viděl.",
+            "Pokaždé když budeš otevírat ledničku zaťukej na ni.",
+            "Odpusť si dnes jakékoliv maso.",
+            "Zavolej dnes svému kamarádovi a zeptej se ho jak se má.",
+            "Zavolej dnes svému příbuznému a popovídej si s ním.",
+            "Pozdrav na ulici náhodného člověka hlasitým ahoj.",
+            "Oslov dnes na ulici někoho, kdo tě zaujme a chtěj po něm číslo.",
+            "Zajdi do knihkupectví a kup si knížku, která tě zaujme.",
+            "Ujdi dnes alespoň 10 kilometrů.",
+            "Kup si druh ovoce, který jsi ještě nikdy neochutnal/a, a zjisti, jak chutná.",
+            "Zajdi do nové nebo oblíbené místní kavárny a dej si tam něco dobrého.",
+            "Běž do restaurace nebo bistra, o kterém si už dlouho říkáš, že ho navštívíš.",
+            "Začni svůj den s 10–15 minutovou rozcvičkou.",
+            "Naplánuj si procházku v přírodě.",
+            "Půjč si kolo, brusle nebo vyzkoušej jiný sport, který jsi ještě nikdy nebo dlouho nedělal/a.",
+            "Vyraz na procházku a při ní sbírej odpadky, které najdeš.",
+            "Běž do květinářství a kup si novou květinu do bytu.",
+            "Buď kreativní. Napiš básničku, povídku, maluj, kresli. Je to na tobě.",
+            "Kup si ingredience na sushi a zkus si ho připravit doma.",
+            "Upcyklace: Vezmi staré předměty nebo oblečení a přetvoř je na něco nového a užitečného.",
+            "Udělej si výlet do muzea.",
+            "Přihlas se na online kurz, který tě zajímá. Může to být cokoliv od fotografování, přes vaření až po učení nového jazyka.",
+            "Jezte dneska vše druhou rukou než normálně (praváci jí levou rukou a leváci pravou).",
+            "Jezte dnes jen rukama.",
+            "Dejte si jedno jídlo bez použití rukou.",
+            "Dneska si vezmi jiné boty než nosíš každý den.",
+            "Pořiď si/někomu květinu.",
+            "Vyslechni, o čem se baví někdo o 15 let mladší/starší než ty.",
+            "Večer sepiš seznam jmen lidí, které jsi dneska potkal.",
+            "Zajdi si na dobré jídlo a porovnej ho s tím, co normálně jíš.",
+            "Pusťte si lekci cvičení, kterému se normálně nevěnujete a zacvičte si.",
+            "Pusťte si tutorial z oboru, kterému se nevěnujete.",
+            "Buď turista ve svém vlastním městě."
         ];
 
         const randomTask = tasks[Math.floor(Math.random() * tasks.length)];
